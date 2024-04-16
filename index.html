@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <title>fitness freak</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            color: white;
+            
+        }
+        .navbar{
+            width: 100vw;
+            height: 12vh;
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.4);   
+            padding: 10px;
+            position: absolute;
+            top: 0px;
+            align-items: flex-end;
+        }
+        .logo{
+            font-size: 25px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            font-family: 'DynaPuff', cursive ;
+            /* width: 40px; */
+        }
+        .navbar ul{
+            display: flex;
+            list-style: none;
+            margin: 0px 100px;
+        }
+        .navbar ul li a{
+            font-size: 20px;
+            text-decoration: none;
+            padding: 4px 8px;
+            text-align: center;
+            border-radius: 5px;
+            text-transform: capitalize;
+        }
+        .navbar ul li a:hover{
+            background-color: grey;
+            color: black;
+            animation: anime1;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes anime1 {
+            from{
+                border: 2px solid white;
+            }            
+            to{
+                border: 2px solid black;
+            }
+        }
+        .home{
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url(img/home.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: overlay;
+            height: 100vh;
+            width: 100vw;
+            padding: 20vh 10px 10px 10px;
+            display: flex;
+        }
+        .bigheading{
+            padding: 0px 20px;
+            font-family: 'Crimson Text', serif;
+            /* width: 60vw; */
+            font-size: 5.5rem;
+            text-transform: uppercase;
+            text-shadow: 3px 3px black ;
+            /* border: 2px solid white; */
+        }
+        .home form{
+            /* border: 2px solid white; */
+            padding-bottom: 20px;
+            text-align: center;
+            margin: 0px auto;
+        }
+        .home form h2{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Crimson Text', serif;
+            padding: 10px;
+            text-transform: uppercase;
+            
+        }
+        .home form input , .btn{
+            font-size: 20px;
+            width: 70%;
+            padding: 10px;
+            color: grey;
+            text-align: center;
+            margin: 10px 0px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px black;
+        }
+        .btn:hover{
+            background-color: grey;
+            color: black;
+            animation: anime1;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        @media screen and (max-width: 768px){
+            .navbar{
+                display: block;
+                height: max-content;
+                text-align: center;
+            }
+            .navbar ul{
+                margin: 0px;
+                justify-content: center;
+                flex-wrap: wrap;
+            }        
+            .home{
+                display: block;
+                text-align: center;
+                height:fit-content;
+            }    
+            .bigheading{
+                margin: 20vh auto;
+                width: 70vw;
+                font-size: 3rem;
+                padding: 0%;
+            }
+            .home form{
+                /* background-color: rgb(165, 165, 165);
+                border: 2px solid rgb(59, 59, 59); */
+                margin: 10px auto;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+           <div>fitness</div> <div>freak</div>  </div>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">our plans</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+    </nav>
+    <div class="home">
+        <h1 class="bigheading">
+            nothing will work unless you do
+        </h1>
+        <form action="">
+            <h2>join now</h2>
+            <input type="text" name="name" id="" placeholder="Enter your name">
+            <input type="text" name="age" id="" placeholder="Enter your Age">
+            <input type="text" name="cnic" id="" placeholder="Enter your CNIN no">
+            <input type="text" name="phone" id="" placeholder="Enter your Phone no">
+            <button class="btn">
+                submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
